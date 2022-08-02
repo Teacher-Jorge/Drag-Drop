@@ -7,11 +7,11 @@
 }
 
 .super-container {
-    max-width: 380px;
-    height: 320px;
-    background-color: #fff;
+    max-width: 370px;
+    height: 600px;
+    background-color: rgb(196, 224, 248);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin: 0 auto;
 }
 
@@ -61,30 +61,30 @@
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
-    margin-top: 10px;
+    margin-top: 300px;
 }
 
 .words {
     font-family: 'Sriracha';
-    font-size: 1.4rem;
+    font-size: 2rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    color: rgb(255, 60, 0);
+    color: rgb(247, 0, 255);
     font-weight: bolder;
     text-shadow: 1px 1px 2px black;
     margin: 0px;
-    width: 70px;
-    height: 30px;
+ 
    
 }
 
 .box {
-    width: 75px;
-    height: 35px;
-    margin: 5px 1px;
+    width: 160px;
+    height: 55px;
+    margin: 1px 0px;
     border: 1px solid steelblue;
 }
 

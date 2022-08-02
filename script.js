@@ -38,6 +38,11 @@ if (dragger[0] != "" && dragger[1] != "" && dragger[2] != "" && dragger[3] != ""
         let question = document.querySelector('h1')
         question.innerHTML = "Excellent!"
         question.style.color = 'lime'
+
+        setTimeout(function() {
+            question.innerHTML = 'She is eating a hoagie!'
+            question.style.color = 'fuchsia'
+        }, 3000)
     } else {
         let audio = document.getElementById('boing')
         audio.play()
