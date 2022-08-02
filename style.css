@@ -7,9 +7,8 @@
 }
 
 .super-container {
-    max-width: 360px;
-    height: 650px;
-    border: 2px solid steelblue;
+    max-width: 350px;
+    height: 570px;
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
@@ -23,7 +22,7 @@
     justify-content: center;
     padding: 2px;
     text-shadow: 1px 1px 2px black;
-    color:rgb(255, 102, 0);
+    color:rgb(182, 0, 206);
     letter-spacing: 1px;
 }
 
@@ -43,11 +42,11 @@
     color:rgb(255, 217, 1);
     width: 60px;
     height: 30px;
-    border-radius: 5px;
+    border-radius: 10px;
     border-style: none;
     margin:5px;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-    background-color: rgb(204, 0, 255);
+    background-color: rgb(131, 0, 163);
     letter-spacing: 1px;
 }
 
@@ -66,27 +65,40 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    margin-top: 200px;
+    margin-top: 280px;
 }
 
 .words {
     font-family: 'bangers';
-    font-size: 2rem;
+    font-size: 1.2rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    color: rgb(247, 0, 255);
+    color: rgb(147, 0, 192);
     font-weight: bolder;
     text-shadow: 1px 1px 2px black;
     margin-top: 0px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
    
 }
 
 .box {
-    width: 160px;
-    height: 35px;
-    margin-top: 10px;
-    border: 1px solid steelblue;
+    width: 60px;
+    height: 60px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    border-radius: 30px;
+    background-color: aliceblue;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    margin-top: 350px;
+    opacity: 0.5;
 }
 
