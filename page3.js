@@ -11,7 +11,7 @@ btnReset.addEventListener('click', function() {
 btnPlay.addEventListener('click', function() {
     let audio = document.getElementById('click')
     audio.play()
-    let video = document.getElementById('cooking')
+    let video = document.getElementById('chef')
     video.play()
 })
 
