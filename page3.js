@@ -1,8 +1,9 @@
 let btnPlay = document.getElementById('btnPlay')
-let btnReset = document.getElementById('reset')
-let btnNext = document.querySelector('a')
+let btnReset = document.getElementById('btnReset')
+let btnNext = document.getElementById('btnNext')
 btnNext.style.visibility = 'hidden'
 let question = document.querySelector('h1')
+btnTranslate.style.visibility = 'hidden'
 
 btnReset.addEventListener('click', function() {
     window.location.reload()
@@ -63,6 +64,7 @@ if (dragger[0] != "" && dragger[1] != "" && dragger[2] != "" && dragger[3] != ""
             let audio = document.getElementById('cooking')
             audio.play()
             btnNext.style.visibility = 'visible'
+            btnTranslate.style.visibility = 'visible'
         }, 2000)
     } else {
         let audio = document.getElementById('boing')
