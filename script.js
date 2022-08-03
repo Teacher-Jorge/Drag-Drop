@@ -1,11 +1,15 @@
 let btnPlay = document.getElementById('btnPlay')
 let btnReset = document.getElementById('reset')
+let btnNext = document.querySelector('a')
+btnNext.style.visibility = 'hidden'
 
 btnReset.addEventListener('click', function() {
     window.location.reload()
 })
 
 btnPlay.addEventListener('click', function() {
+    let audio = document.getElementById('click')
+    audio.play()
     let video = document.getElementById('eatingVideo')
     video.play()
 })
@@ -44,6 +48,9 @@ if (dragger[0] != "" && dragger[1] != "" && dragger[2] != "" && dragger[3] != ""
         setTimeout(function() {
             question.innerHTML = 'She is eating a hoagie!'
             question.style.color = 'yellow'
+            let audio = document.getElementById('eating')
+            audio.play()
+            btnNext.style.visibility = 'visible'
         }, 2000)
     } else {
         let audio = document.getElementById('boing')
@@ -51,6 +58,9 @@ if (dragger[0] != "" && dragger[1] != "" && dragger[2] != "" && dragger[3] != ""
         let question = document.querySelector('h1')
         question.innerHTML = 'Try again!'
         question.style.color = 'red'
+        let img = document.querySelector('img')
+        img.style.visibility = 'hidden'
+        
     }
   }
 }

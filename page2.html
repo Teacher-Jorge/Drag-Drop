@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Present Continuous 2</title>
+</head>
+<body>
+    <audio id="boing" src="assets/boing.wav"></audio>
+    <audio id="confirm" src="assets/confirm.mp3"></audio>
+    <audio id="click" src="assets/click.wav"></audio>
+    <audio id="riding" src="assets/riding.mp3"></audio>
+    <div class="super-container">
+        
+        <div class="video">
+            <div class="heading"><h1>What are they doing?</h1></div> 
+            <video id="eatingVideo" src="assets/biking.mp4" autoplay width="350px"></video>
+            <div class="button-play">
+                <button class="buttons" id="btnPlay">Play</button>
+                <button id="reset" class="buttons">Reset</button>
+                <button id="next" class="buttons"> <a href="page3.html">Next</a> </button>
+                
+            </div>
+        </div>
+        <div class="container">
+            <div class="words" draggable="true" ondragstart="drag(event)" id="2">are</div>
+            <div class="words" draggable="true" ondragstart="drag(event)" id="4">a</div>
+            <div class="words" draggable="true" ondragstart="drag(event)" id="5">bike</div>
+            <div class="words" draggable="true" ondragstart="drag(event)" id="3">riding</div>
+            <div class="words" draggable="true" ondragstart="drag(event)" id="1">They</div>
+        </div>
+        <img src="assets/drag.png" alt="">
+        <div class="container">
+            <div class="figura">
+                <div class="box" id="0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <h2></h2>
+            </div>
+            <div class="figura">
+                <div class="box" id="1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <h2></h2>
+            </div>
+            <div class="figura">
+                <div class="box" id="2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <h2></h2>
+            </div>
+            <div class="figura">
+                <div class="box" id="3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <h2></h2>
+            </div>
+            <div class="figura">
+                <div class="box" id="4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <h2></h2>
+            </div>
+            
+        </div>
+    </div>
+  
+
+    
+    
+   
+    
+
+    
+
+
+    <script src="page2.js"></script>
+</body>
+</html>
