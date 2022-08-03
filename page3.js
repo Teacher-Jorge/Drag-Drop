@@ -2,6 +2,7 @@ let btnPlay = document.getElementById('btnPlay')
 let btnReset = document.getElementById('reset')
 let btnNext = document.querySelector('a')
 btnNext.style.visibility = 'hidden'
+let question = document.querySelector('h1')
 
 btnReset.addEventListener('click', function() {
     window.location.reload()
@@ -12,6 +13,17 @@ btnPlay.addEventListener('click', function() {
     audio.play()
     let video = document.getElementById('cooking')
     video.play()
+})
+
+btnTranslate.addEventListener('click', function() {
+    let audio = document.getElementById('click')
+    audio.play()
+    question.innerHTML = 'Ele está preparando uma refeição!'
+    question.style.color = 'lawngreen'
+    setTimeout(function() {
+        question.innerHTML = 'He is preparing a meal!'
+        question.style.color = 'yellow'
+    }, 3000)
 })
 
 //Drag and Drop Events

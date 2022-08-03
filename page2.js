@@ -2,6 +2,7 @@ let btnPlay = document.getElementById('btnPlay')
 let btnReset = document.getElementById('reset')
 let btnNext = document.querySelector('a')
 btnNext.style.visibility = 'hidden'
+let question = document.querySelector('h1')
 
 btnReset.addEventListener('click', function() {
     window.location.reload()
@@ -12,6 +13,17 @@ btnPlay.addEventListener('click', function() {
     audio.play()
     let video = document.getElementById('eatingVideo')
     video.play()
+})
+
+btnTranslate.addEventListener('click', function() {
+    let audio = document.getElementById('click')
+    audio.play()
+    question.innerHTML = 'Eles estão andando de bicicleta!'
+    question.style.color = 'lawngreen'
+    setTimeout(function() {
+        question.innerHTML = 'They are riding a bike!'
+        question.style.color = 'yellow'
+    }, 3000)
 })
 
 //Drag and Drop Events
